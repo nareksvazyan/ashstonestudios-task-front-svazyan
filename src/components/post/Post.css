@@ -1,0 +1,130 @@
+.posts_container .postBlock {
+    width: 22.5rem;
+    min-height: 28.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+@media(max-width: 417px) {
+    .posts_container .postBlock {
+        width: 100%;
+        min-height: 28.75rem;
+    }
+}
+
+.posts_container .postBlock .img {
+    width: 22.5rem;
+    min-height: 16.25rem;
+    display: block;
+}
+@media(max-width: 417px) {
+    .posts_container .postBlock .img {
+        width: 100%;
+        min-height: 16.25rem;
+        display: block;
+    }
+}
+
+.posts_container .postBlock .img img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.posts_container .postBlock .tags {
+    color: #EB0028;
+    font-size: 0.8125rem;
+    line-height: 0.8125rem;
+    font-weight: 600;
+}
+
+.posts_container .postBlock .title {
+    font-size: 1.5rem;
+    color: #000000;
+    font-weight: 600;
+    line-height: 1.875rem;
+    cursor: pointer;
+}
+
+.posts_container .postBlock .info {
+    display: flex;
+    align-items: center;
+    gap: 0.3125rem;
+}
+
+.posts_container .postBlock .info .autor {
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: #000000;
+    line-height: 0.75rem;
+}
+
+.posts_container .postBlock .info i {
+    background: #D7D7D7;
+    width: 0.1875rem;
+    height: 0.1875rem;
+}
+
+.posts_container .postBlock .info .date,
+.posts_container .postBlock .info .count {
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    color: #9B9B9B;
+}
+
+.posts_container .postBlock p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #929292;
+}
+
+.posts_container .postBlock .popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ffffffe5;
+}
+
+.posts_container .postBlock .popup .popupBlock {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.875rem 1.875rem;
+    position: relative;
+} 
+
+.posts_container .postBlock .popup .popupBlock h2 {
+    font-size: 2rem;
+    color: #000000;
+    font-weight: 600;
+    line-height: 2rem;
+    max-width: 500px;
+    text-align: center;
+}
+
+.posts_container .postBlock .popup .popupBlock p {
+    margin-top: 1.25rem;
+    font-size: 1.3rem;
+    color: #929292;
+    max-width: 1200px;
+    text-align: center;
+    line-height: 1.8rem;
+}
+
+.posts_container .postBlock .popup .popupBlock button {
+    width: 20px;
+    height: 20px;
+    background-image: url('../../../public/images/project/x.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
